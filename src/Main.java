@@ -8,12 +8,15 @@ import java.sql.Statement;
 public class Main {
 	public static void main(String[] args) {
 		createNewTable(); //Creating the table within the database file
+		System.out.println("Before adding student:");
 		displayAll(); //Displaying all the data within the table in a formatted fashion
 		System.out.println(); //Break line between table outputs
-		addStudent("Jeremiah Johnson", 16, 11, "Del Norte"); //Adds a student to the database - modify the values to add yourself!
+		addStudent("Jeremiah J.", 16, 11, "Del Norte"); //Adds a student to the database - modify the values to add yourself!
+		System.out.println("Student added:");
 		displayAll(); 
 		System.out.println();
-		deleteStudent("Jeremiah Johnson"); // Deleting the student from the database based off of their name
+		deleteStudent("Jeremiah J."); // Deleting the student from the database based off of their name
+		System.out.println("After deleting student:");
 		displayAll();
 		System.out.println();
 	}
